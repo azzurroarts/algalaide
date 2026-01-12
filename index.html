@@ -2,70 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>ALGALAIDE</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ALGALAIDE — An Open Record</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
- <header class="site-header">
-  <div class="header-inner">
-    <div class="logo">
-      <!-- Replace with your logo later -->
-      <h1>ALGALAIDE</h1>
-    </div>
+  <style>
+    /* ---------- RESET ---------- */
+    * {
+      box-sizing: border-box;
+    }
 
-    <nav class="main-nav">
-      <a href="index.html">Home</a>
-      <a href="pages/timeline.html">Timeline</a>
-      <a href="pages/parliament.html">Parliament</a>
-      <a href="pages/community.html">Community</a>
-      <a href="pages/species.html">Species</a>
-      <a href="pages/theories.html">Theories</a>
-      <a href="pages/remedies.html">Remedies</a>
-      <a href="pages/about.html">About</a>
-    </nav>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
 
-    <div class="search-bar">
-      <input type="text" id="searchInput" placeholder="Search ALGALAIDE..." />
-      <button id="searchButton">🔍</button>
-    </div>
-  </div>
-</header>
+    /* ---------- HEADER / NAV ---------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 2px solid #e5e5e5;
+    }
 
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      gap: 2rem;
+    }
 
-  <main>
+    .site-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
 
-  <section class="manifesto">
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
 
-    <h2 class="manifesto-title">MANIFESTO OF A MARINE ARTIST</h2>
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
 
-    <p><strong>Hi. I’m Azzy.</strong> I’m a marine illustrator and snorkeller — and for years, the Gulf was my studio, my happy place, and, honestly, my therapy. I spent years drawing and swimming alongside the creatures of South Australia’s Gulf. Then they began washing up dead.</p>
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-    <p><strong>Let’s be clear:</strong> the algal bloom was not just gross. It was catastrophic.</p>
+    /* ---------- PAGE HEADER ---------- */
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 2rem 1.5rem 1rem;
+      flex-wrap: wrap;
+    }
 
-    <p>We saw mass marine death on a scale that should have dominated front pages daily — dolphins, rays, sharks, fish of every kind, washing up dead along South Australia’s shores. People were tripping over corpses on their morning beach walks. Surfers came out of the water coughing, eyes stinging. Dogs came home from swims with blood streaming from their noses. It wasn’t subtle. It was apocalyptic.</p>
+    .page-header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 800;
+    }
 
-    <!-- ... rest of manifesto paragraphs ... -->
+    /* ---------- SEARCH ---------- */
+    .search-wrapper {
+      flex: 1;
+      max-width: 420px;
+    }
 
-    <p class="verdict">
-      If you want to govern this Gulf, then the life within it is your responsibility.
-    </p>
+    #searchInput {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border-radius: 999px;
+      border: 2px solid #ccc;
+      outline: none;
+    }
 
-    <p><strong>And I’m not going to stand by while you let it die.</strong></p>
+    #searchInput:focus {
+      border-color: #2b4f2b;
+    }
 
-    <p><strong>So get on board with fixing this. Or get the hell out of the way.</strong></p>
+    /* ---------- MAIN CONTENT ---------- */
+    main {
+      padding: 0 1.5rem 4rem;
+      max-width: 900px;
+      margin: auto;
+    }
 
-  </section>
+    .manifesto-title {
+      text-align: center;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      margin: 2rem 0;
+      color: #2b4f2b;
+    }
 
-</main>
+    .manifesto p {
+      margin-bottom: 1.4rem;
+    }
 
-
-  <footer>
-    <p>&copy; 2026 — ALGALAIDE. This is a creative, archival project.</p>
-  </footer>
-
-</body>
-</html>
-
-
+    .verdict {
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-left: 4px solid #2b4f2b;
+      padding-left: 1rem
