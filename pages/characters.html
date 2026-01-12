@@ -109,8 +109,8 @@
 
     .character {
       margin-bottom: 3.5rem;
-      padding-left: 1.2rem;
-      border-left: 4px solid #2b4f2b;
+       padding-left: 0;       /* remove extra padding if you like */
+  border-left: none;     /* remove the green line */
     }
 
     .character h2 {
@@ -137,7 +137,7 @@
 }
 
 .character-img {
-  width: 220px;       /* adjust to your graphics */
+  width: 320px;       /* adjust to your graphics */
   height: auto;
   border-radius: 12px;
   flex-shrink: 0;     /* prevents image shrinking too small */
@@ -154,7 +154,7 @@
   }
 
   .character-img {
-    width: 120px; /* smaller on mobile */
+    width: 200px; /* bigger than before */
     margin-bottom: 1rem;
   }
 }
