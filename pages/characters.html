@@ -1,1 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ALGALAIDE — Characters</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 2px solid #e5e5e5;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .site-title {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- PAGE HEADER ---------- */
+    .page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 2rem 1.5rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .page-header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 800;
+    }
+
+    /* ---------- SEARCH ---------- */
+    .search-wrapper {
+      flex: 1;
+      max-width: 420px;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border-radius: 999px;
+      border: 2px solid #ccc;
+      outline: none;
+    }
+
+    #searchInput:focus {
+      border-color: #2b4f2b;
+    }
+
+    /* ---------- MAIN ---------- */
+    main {
+      padding: 0 1.5rem 4rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      margin-bottom: 3rem;
+    }
+
+    .character {
+      margin-bottom: 3.5rem;
+      padding-left: 1.2rem;
+      border-left: 4px solid #2b4f2b;
+    }
+
+    .character h2 {
+      margin-top: 0;
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
+    }
+
+    .character p {
+      margin-bottom: 1rem;
+    }
+
+    .archetype {
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="site-title">ALGALAIDE</div>
+    <nav>
+      <a href="index.html">Manifesto</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="parliament.html">Parliament</a>
+      <a href="community.html">Community</a>
+      <a href="characters.html">Characters</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <h1>CHARACTERS</h1>
+  <div class="search-wrapper">
+    <input
+      type="search"
+      id="searchInput"
+      placeholder="Search characters, names, roles…"
+    />
+  </div>
+</div>
+
+<main id="content">
+
+  <p class="intro">
+    This crisis is not just chemical or biological — it is human.
+    The algal bloom revealed a cast of recurring personalities that appear
+    whenever environmental collapse collides with politics, money, fear,
+    ego, and hope.
+    Understanding these characters — how they collaborate, obstruct,
+    amplify, or neutralise one another — is essential if we are to navigate
+    forward rather than repeat the same disaster in a different costume.
+  </p>
+
+  <section class="character">
+    <h2>DR ALGIE</h2>
+    <p class="archetype">The Bloom Itself / Comic Anti-Hero</p>
+    <p>
+      Dr Algie is the algal bloom personified — not as a monster, but as a smug,
+      semi-sentient force that thrives on human delay and denial. Half mad
+      scientist, half accidental god, Dr Algie does not see itself as evil.
+      It simply responds to the conditions provided.
+    </p>
+    <p>
+      This character exists to remind us that the bloom is not a villain with
+      intent. It is an outcome. It flourishes when nutrients, warming waters,
+      political inertia, and industrial runoff align just right.
+    </p>
+  </section>
+
+  <section class="character">
+    <h2>TIN FOIL HATMAN</h2>
+    <p class="archetype">The Misdirector / Chaos Engine</p>
+    <p>
+      Tin Foil Hatman embodies the conspiratorial response to crisis — loud,
+      confident, angry, and catastrophically wrong. Chinese submarines.
+      Desalination plants. Lighting tricks. Anything except the boring,
+      uncomfortable truth.
+    </p>
+    <p>
+      This archetype includes political figures who actively downplayed or
+      undermined the severity of the bloom early on, muddying public discourse
+      and giving misinformation institutional legitimacy.
+    </p>
+  </section>
+
+  <section class="character">
+    <h2>SHARKFACE</h2>
+    <p class="archetype">Capital / Corporate Power</p>
+    <p>
+      Sharkface is capitalism without camouflage — a shark-headed businessman
+      clutching cash and a cigar, amused by environmental destruction so long
+      as profits remain intact.
+    </p>
+    <p>
+      This character represents corporate fishing interests, development
+      lobbies, energy giants, and the quiet economic pressures exerted on
+      parliament. Indigenous rights, small communities, and ecosystems are
+      collateral.
+    </p>
+  </section>
+
+  <section class="character">
+    <h2>COUNCILLOR JENNY</h2>
+    <p class="archetype">Bureaucracy / Local Government</p>
+    <p>
+      Councillor Jenny represents the public servant — overworked, underpowered,
+      risk-averse, and structurally encouraged to defer responsibility upward
+      until it evaporates.
+    </p>
+    <p>
+      This archetype includes officials who later claimed they were instructed
+      to pause investigations. Not villains, but conduits through which inaction
+      quietly becomes policy.
+    </p>
+  </section>
+
+  <section class="character">
+    <h2>DOUGIE B</h2>
+    <p class="archetype">The Charismatic Bridge</p>
+    <p>
+      Dougie B is where culture meets politics. Part celebrity, part activist,
+      part fallen or rising politician. Charismatic, relatable, and capable of
+      making complex issues feel human — and cool.
+    </p>
+    <p>
+      This archetype includes community figures, outspoken Greens MLCs,
+      disgraced politicians attempting re-entry through ecological advocacy,
+      and grassroots documentarians whose visibility forces public attention.
+    </p>
+  </section>
+
+  <section class="character">
+    <h2>THE SOCIETY OF SNOTTY SCIENTISTS</h2>
+    <p class="archetype">Gatekeepers of Knowledge</p>
+    <p>
+      An elite scientific class — well funded, politically adjacent, and often
+      hostile to dissent. Fierce internal rivalries coexist with a united front
+      when public narratives are threatened.
+    </p>
+    <p>
+      This archetype reflects how power, sexism, racism, ageism, and academic
+      hierarchy shape what science is allowed to say — and what it is not.
+    </p>
+  </section>
+
+  <section class="character">
+    <h2>MARINE CELINE</h2>
+    <p class="archetype">The Dissenter Scientist</p>
+    <p>
+      Marine Celine represents scientists who refuse to stay silent. Public-facing,
+      empathetic, and often ostracised by the elite for engaging communities
+      directly.
+    </p>
+    <p>
+      These figures balance integrity with ambition, activism with expertise,
+      and often become lightning rods for both hope and resentment.
+    </p>
+  </section>
+
+  <section class="character">
+    <h2>PREMIER VINNY SPEAKS</h2>
+    <p class="archetype">The Polished Puppet</p>
+    <p>
+      Premier Vinny Speaks is the smiling face of state power — charismatic,
+      disciplined, and deeply entangled with commercial interests.
+    </p>
+    <p>
+      This archetype represents leaders who speak of responsibility while
+      legislating against protest, delaying investigations, and protecting
+      donors. Not cartoon villains — far more dangerous than that.
+    </p>
+  </section>
+
+</main>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const content = document.getElementById('content');
+
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    const sections = content.querySelectorAll('.character');
+
+    sections.forEach(section => {
+      const text = section.innerText.toLowerCase();
+      section.style.display = text.includes(query) ? '' : 'none';
+    });
+  });
+</script>
+
+</body>
+</html>
