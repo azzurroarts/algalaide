@@ -127,6 +127,36 @@
       font-style: italic;
       color: #555;
     }
+    
+/* -------------------- ADD FLEX LAYOUT FOR IMAGES -------------------- */
+.character-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap; /* wraps nicely on mobile */
+}
+
+.character-img {
+  width: 150px;       /* adjust to your graphics */
+  height: auto;
+  border-radius: 12px;
+  flex-shrink: 0;     /* prevents image shrinking too small */
+}
+
+.character-text {
+  flex: 1;            /* text takes remaining space */
+}
+
+@media (max-width: 600px) {
+  .character-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character-img {
+    width: 120px; /* smaller on mobile */
+    margin-bottom: 1rem;
+  }
   </style>
 </head>
 
