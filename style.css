@@ -77,4 +77,18 @@ footer {
   margin: 2.5rem 0;
 }
 
+/*MOBILE STUFF */
+@media (max-width: 600px) {
+  .character-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .character-img {
+    width: 120px; /* smaller on mobile */
+    margin-bottom: 1rem;
+  }
+}
+
+
 
