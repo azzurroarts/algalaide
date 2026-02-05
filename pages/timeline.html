@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ALGALAIDE — Timeline</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <style>
+    /* ---------- TIMELINE LAYOUT ---------- */
+
+    .timeline {
+      position: relative;
+      margin: 4rem auto;
+      padding-left: 2.5rem;
+      max-width: 900px;
+    }
+
+    /* vertical spine */
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 12px;
+      width: 2px;
+      height: 100%;
+      background: #2b4f2b;
+      opacity: 0.25;
+    }
+
+    .timeline-entry {
+      position: relative;
+      margin-bottom: 4rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .timeline-entry.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* dot */
+    .timeline-entry::before {
+      content: "";
+      position: absolute;
+      left: -18px;
+      top: 0.4rem;
+      width: 14px;
+      height: 14px;
+      background: #2b4f2b;
+      border-radius: 50%;
+    }
+
+    .timeline-date {
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #2b4f2b;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .timeline-entry h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    .timeline-entry p {
+      margin-bottom: 0.8rem;
+    }
+
+    .timeline-quote {
+      font-style: italic;
+      color: #555;
+      border-left: 3px solid #ddd;
+      padding-left: 1rem;
+      margin: 1rem 0;
+    }
+
+    .timeline-image {
+      margin-top: 1.2rem;
+      max-width: 100%;
+      border-radius: 10px;
+      opacity: 0.85;
+    }
+
+    @media (max-width: 600px) {
+      .timeline {
+        padding-left: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="site-title">ALGALAIDE</div>
+    <nav>
+      <a href="../index.html">Manifesto</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="parliament.html">Parliament</a>
+      <a href="community.html">Community</a>
+      <a href="characters.html">Characters</a>
+      <a href="remedies.html">Remedies</a>
+      <a href="theories.html">Theories</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <h1>TIMELINE</h1>
+</div>
+
+<main>
+
+  <section class="timeline">
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">Late 2024</div>
+      <h2>Marine Heatwave Conditions Form</h2>
+      <p>
+        Sea surface temperatures across South Australia rise well above long-term averages.
+        Scientists later identify these conditions as a key precursor for harmful algal blooms.
+      </p>
+    </div>
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">Mid–Late March 2025</div>
+      <h2>First Mass Marine Deaths Observed</h2>
+      <p>
+        Fish, rays, sharks, and dolphins begin washing ashore along the Fleurieu Peninsula.
+        Beach foam, water discolouration, and respiratory irritation are reported.
+      </p>
+      <p>
+        The species <strong>Karenia mikimotoi</strong> is identified in samples.
+      </p>
+    </div>
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">April 2025</div>
+      <h2>Public Alarm, Official Silence</h2>
+      <p>
+        Community members, fishers, surfers, and divers raise concerns publicly.
+        Government communication remains minimal.
+      </p>
+    </div>
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">May 2025</div>
+      <h2>First Mentions in Parliament</h2>
+      <p>
+        The algal bloom is first raised formally in the South Australian Parliament by
+        <strong>Tammy Franks MLC</strong> and <strong>Robert Simms MLC</strong>.
+      </p>
+      <div class="timeline-quote">
+        “This is not a hypothetical threat — it is unfolding now.”
+      </div>
+    </div>
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">June 2025</div>
+      <h2>Bloom Reaches Metropolitan Beaches</h2>
+      <p>
+        Storm activity pushes bloom-affected water into Gulf St Vincent.
+        Adelaide beaches are visibly impacted.
+      </p>
+    </div>
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">Mid–Late 2025</div>
+      <h2>Political Fracture & Downplaying</h2>
+      <p>
+        Government figures dispute language describing the bloom as “toxic”.
+        Public messaging focuses on reassurance and tourism optics.
+      </p>
+    </div>
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">Late 2025</div>
+      <h2>Claims of Delayed Investigation</h2>
+      <p>
+        A senior scientist later alleges she was instructed to pause investigation into
+        causes of the bloom until after the state election.
+      </p>
+    </div>
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">January 2026</div>
+      <h2>Scientist Resigns</h2>
+      <p>
+        The scientist resigns from advisory roles, citing an adversarial environment
+        and political interference.
+      </p>
+    </div>
+
+    <!-- ENTRY -->
+    <div class="timeline-entry">
+      <div class="timeline-date">Election Year</div>
+      <h2>The Bloom Becomes Political</h2>
+      <p>
+        The algal bloom remains unresolved as South Australia enters a state election cycle.
+        Accountability becomes a campaign issue.
+      </p>
+    </div>
+
+  </section>
+
+</main>
+
+<script>
+  const entries = document.querySelectorAll('.timeline-entry');
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  entries.forEach(entry => observer.observe(entry));
+</script>
+
+</body>
+</html>
